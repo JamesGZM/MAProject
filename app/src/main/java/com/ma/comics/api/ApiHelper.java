@@ -29,12 +29,12 @@ public class ApiHelper {
     private Retrofit retrofit;
     private OkHttpClient mOkHttpClient;
 
-    private static <T> Subscription getSubscription(Observable<T> mObservable, Observer<T> mObserver) {
+    public static <T> Subscription getSubscription(Observable<T> mObservable, Observer<T> mObserver) {
         return GSubscribeManager.CustomSendSubScribe(mObservable, mObserver);
     }
 
     // 返回接口实例
-    private static ApiService getService() {
+    public static ApiService getService() {
         GsonBuilder builder = new GsonBuilder();
         builder.excludeFieldsWithModifiers(Modifier.FINAL, Modifier.TRANSIENT, Modifier.STATIC);
         Gson gson = builder.create();
@@ -74,6 +74,8 @@ public class ApiHelper {
                 LoginInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
                 builder.addInterceptor(LoginInterceptor); // 添加retrofit日志打印
             }
+
+            builder.addInterceptor(new TokenInterceptor());
 
             mOkHttpClient = builder.build();
 

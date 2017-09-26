@@ -24,6 +24,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support:support-annotations:26.0.2'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.github.JamesGZM:GUtils-Lib:0fc08aabc4'
+    compile 'com.github.JamesGZM:GUtils-Lib:ed3da2f869'
 
 }

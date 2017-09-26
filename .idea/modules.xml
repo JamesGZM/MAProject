@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GUtils-Lib/GUtils-Lib.iml" filepath="$PROJECT_DIR$/GUtils-Lib/GUtils-Lib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GUtils-Lib/GUtils-Lib.iml" filepath="$PROJECT_DIR$/GUtils-Lib/GUtils-Lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MAProject.iml" filepath="$PROJECT_DIR$/MAProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

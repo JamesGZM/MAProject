@@ -3,6 +3,7 @@ package com.ma.comics.api;
 import com.ma.comics.entity.LoginEntity;
 import com.ma.comics.entity.TokenEntity;
 
+import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -17,8 +18,9 @@ import rx.Observable;
 
 public interface ApiService {
 
+
     @POST("auth/sign-in")
-    Observable<CustomWrapperRspEntity<TokenEntity>> login(@Body LoginEntity entity);
+    Call<CustomWrapperRspEntity<TokenEntity>> login(@Body final LoginEntity entity);
 
 
     @GET("categories")
